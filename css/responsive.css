@@ -1,0 +1,6 @@
+@media (max-width: 1199px) {
+    #header .nav-link {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}

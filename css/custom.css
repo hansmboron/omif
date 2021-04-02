@@ -1,0 +1,43 @@
+body, html {
+    font-family: 'Roboto', sans-serif;
+    background-color: #E9EBEE;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+/*----------------------------
+HEADER*/
+#header {
+    width: 100%;
+    background-color: #045001;
+    transition: background ease-out 0.2s;
+}
+
+#header .active {
+    background-color: transparent;
+}
+
+#header .active:hover {
+    background-color: var(--bs-green);
+}
+
+#header .nav-link:hover, #header .dropdown-item:hover {
+    color: white;
+    border-bottom: solid 3px var(--secondary);
+}
+
+#header .dropdown-menu-dark {
+    border-radius: unset;
+    border: none;
+    color: var(--primary);
+    background-color: var(--primary);
+}
+
+/*----------------------------
+MAIN*/
+
+/*#main {*/
+/*    background-color: #E9EBEE;*/
+/*}*/

@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta content="width=device-width,initial-scale=1" name="viewport">
     <!-- CSS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <title>OMIF</title>
 </head>
 <body>
 
 <!--HEADER-->
-<header class="bg-dark" id="header">
-    <div style="background-color: #045813;" class="container-fluid">
+<header id="header">
+    <div class="container">
         <nav  class="navbar navbar-expand-xl navbar-dark py-0">
             <a class="navbar-brand" href="#">
                 <img class="d-inline-block align-top" height="55" src="img/omif.png" alt="OMIF Logo">
@@ -26,7 +28,7 @@
             <div class="collapse navbar-collapse" id="toggleMobileMenu">
                 <ul class="navbar-nav ms-auto text-center fw-bold align-items-center">
                     <li>
-                        <a class="nav-link btn-outline-success" title="Início" aria-current="page" href="#">
+                        <a class="nav-link btn-outline-success active" title="Início" aria-current="page" href="#">
                             <svg height="30" width="30" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>
 
                         </a>
@@ -49,12 +51,12 @@
                             Materiais Estudo
                         </a>
                     </li>
-                    <li class="nav-item dropdown btn-outline-success">
-                        <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                    <li class="nav-item dropdown">
+                        <a aria-expanded="false" class="nav-link btn-outline-success dropdown-toggle" data-bs-toggle="dropdown" href="#"
                            id="navbarDropdown" role="button" title="Área de Imprensa">
                             Área Imprensa
                         </a>
-                        <ul aria-labelledby="navbarDropdown" class="dropdown-menu">
+                        <ul aria-labelledby="navbarDropdown" class="dropdown-menu dropdown-menu-dark">
                             <li><a class="dropdown-item" href="#">OMIF 2018</a></li>
                             <li><a class="dropdown-item" href="#">OMIF 2019</a></li>
                         </ul>
@@ -72,9 +74,36 @@
 </header>
 <!--HEADER-->
 
-
-<main>
-
+<!--MAIN-->
+<main id="main">
+    <div class="container my-3">
+        <section class="row g-3">
+            <div class="col-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title text-center">Card title</h1>
+                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title text-center">Card title</h1>
+                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                        <div class="card-text text-justify">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 </main>
 
 
