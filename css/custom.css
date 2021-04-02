@@ -7,6 +7,10 @@ body, html {
     text-align: justify;
 }
 
+a {
+    color: var(--secondary);
+}
+
 /*----------------------------
 HEADER*/
 #header {
@@ -38,6 +42,11 @@ HEADER*/
 /*----------------------------
 MAIN*/
 
-/*#main {*/
-/*    background-color: #E9EBEE;*/
-/*}*/
+#mainCard .card-title, #sideCard .card-title {
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+#mainCard .card-text {
+    font-size: large;
+}
