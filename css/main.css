@@ -1,0 +1,11 @@
+@import url(./bootstrap.min.css);
+@import url(./config.css);
+@import url(./global.css);
+@import url(./custom.css);
+@import url(./responsive.css);
+
+/* --------------------
+show dropdown of the navbar on hover*/
+nav div ul li.dropdown:hover .dropdown-menu {
+    display: block;
+}
