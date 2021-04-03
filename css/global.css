@@ -1,0 +1,37 @@
+body, html {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--body);
+}
+
+
+.text-justify {
+    text-align: justify;
+}
+
+a {
+    color: var(--secondary);
+    transition: all ease-out .2s;
+}
+
+a:hover {
+    color: var(--link-hover);
+}
+
+/*para não ficar por baixo da navbar na navegação dentro da pagina*/
+.anchor {
+    padding-top: 60px;
+    margin-top: -60px;
+}
+
+
+.button-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    padding: .5rem 1.5rem;
+}
+
+.button-secondary {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+    padding: .5rem 1.5rem;
+}

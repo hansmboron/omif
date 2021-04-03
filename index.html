@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width,initial-scale=1" name="viewport">
+    <link rel="icon" href="img/favicon.png">
     <!-- CSS-->
     <link href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <title>OMIF</title>
 </head>
@@ -16,7 +19,7 @@
     <div class="container">
         <nav class="navbar navbar-expand-xl navbar-dark py-0">
             <a class="navbar-brand" href="#">
-                <img alt="OMIF Logo" class="d-inline-block align-top" height="55" src="img/omif.png">
+                <img id="logo" alt="OMIF Logo" class="d-inline-block align-top" height="55" src="img/omif.png">
                 <span class="visually-hidden">OMIF</span>
             </a>
 
@@ -60,9 +63,9 @@
                            id="navbarDropdown" role="button" title="Área de Imprensa">
                             Área Imprensa
                         </a>
-                        <ul aria-labelledby="navbarDropdown" class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item" href="#">OMIF 2018</a></li>
-                            <li><a class="dropdown-item" href="#">OMIF 2019</a></li>
+                        <ul aria-labelledby="navbarDropdown" class="dropdown-menu dropdown-menu-dark pt-2">
+                            <li><a class="dropdown-item fw-bold" href="#">OMIF 2018</a></li>
+                            <li><a class="dropdown-item fw-bold" href="#">OMIF 2019</a></li>
                         </ul>
                     </li>
                     <li>
@@ -85,8 +88,8 @@
 
 <!--MAIN-->
 <main class="container my-3">
-    <div class="row g-3">
-        <div id="mainCard" class="col-8">
+    <div class="row g-3 ">
+        <div id="mainCard" class="d-md-inline-block d-block col-12 col-md-8">
             <section class="card">
                 <div class="card-header text-muted pb-0">
                     <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
@@ -110,7 +113,7 @@
                     </figure>
                     <div class="text-center mb-5">
                         <h5>Para ver a programação completa acesse:</h5>
-                        <a href="#" class="fw-bold btn btn-lg btn-outline-danger rounded-pill shadow">Evento 2ª Fase 2020</a>
+                        <a href="#" class="btn btn-danger button-secondary rounded-pill shadow">Evento 2ª Fase 2020</a>
                     </div>
                     <div class="card-text">
                         <h4>Anúncio:</h4>
@@ -129,16 +132,13 @@
                     </div>
                     <a class="card-link" href="#sideTitle">Ir até lá</a>
                 </div>
-<!--                <div class="card-footer text-muted">-->
-<!--                    <small>Home >> <a href="#">Conteúdo</a></small>-->
-<!--                </div>-->
             </section>
         </div>
 
-        <div id="sideCard" class="col-4">
+        <div id="sideCard" class="col-12 col-md-4">
             <section class="card">
                 <div class="card-body">
-                    <h4 id="sideTitle" class="card-title text-center">Edição 2020</h4>
+                    <h4 id="sideTitle" class="card-title text-center anchor">Edição 2020</h4>
                     <div class="card-text text-justify">
                         <span class="fw-bold mb-3">Links:</span>
                         <p class="card-text">
@@ -173,13 +173,13 @@
     </div>
 
 </main>
-<footer class="card-footer bg-light px-3">
+<footer style="background-color: #0c4128;" class="card-footer bg-light px-3">
     <div class="d-inline-block">
         <div class="float-start px-md-4 m-2 pe-lg-5 me-sm-4 pt-2">
             <a class=" text-light" href="#"><img style="height: 50px;" src="http://omif.muz.ifsuldeminas.edu.br/images/logo_if.png" alt="Logo Instituto Federal"></a>
         </div>
         <div class="float-end text-center px-3">
-            <a class="px-md-2 p-1 text-light" href="https://www.obm.org.br"><img style="height: 80px;" src="http://omif.muz.ifsuldeminas.edu.br/images/obm.png" alt="Logo Olimpíada Brasileira de Matemática"></a>
+            <a class="px-md-2 p-1 ms-auto text-light" href="https://www.obm.org.br"><img style="height: 80px;" src="http://omif.muz.ifsuldeminas.edu.br/images/obm.png" alt="Logo Olimpíada Brasileira de Matemática"></a>
             <a class="px-md-2 p-1 text-light" href="https://www.gov.br/cnpq/pt-br"><img style="height: 65px;" src="http://omif.muz.ifsuldeminas.edu.br/images/cnpq.png" alt="Logo Conselho Nacional de Desenvolvimento Científico e Tecnológico"></a>
             <a class="px-md-2 p-1 text-light" href="https://www.bieniodamatematica.org.br"><img style="height: 85px;" src="http://omif.muz.ifsuldeminas.edu.br/images/logo2.png" alt="Logo Biênio da Matemática Brasil"></a>
             <a class="px-md-2 p-1 text-light" href="https://impa.br"><img style="height: 85px;" src="http://omif.muz.ifsuldeminas.edu.br/images/impa.png" alt="Logo Instituto de Matemática Pura e Aplicada"></a>
@@ -189,8 +189,14 @@
     </div>
 </footer>
 
+<!--btn go to top-->
+<div class="text-right "> <button onclick="toTop()" id="btn_top" title="Ir ao topo">
+    <svg height="30" width="30" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg>
+</button></div>
+
 
 <!-- Bootstrap Bundle with Popper -->
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
