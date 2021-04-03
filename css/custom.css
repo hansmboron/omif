@@ -17,9 +17,10 @@ HEADER*/
 
 #header.fixed {
     position: fixed;
+    top: 0;
     background: var(--primary-trans);
     box-shadow: 0 0 20px var(--primary-trans);
-    z-index: 9999;
+    z-index: 1030;
     margin-bottom: 60px;
 }
 

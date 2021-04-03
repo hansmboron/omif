@@ -10,7 +10,7 @@ var sticky = header.offsetTop;
 
 function scrollFunction() {
     // fixar navbar ou não
-    if (window.pageYOffset >= sticky + 60) {
+    if (window.pageYOffset >= sticky + 20) {
         header.classList.add("fixed")
         logo.style.height = "40px"
     } else {
