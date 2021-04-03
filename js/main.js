@@ -1,20 +1,20 @@
 // executa quando scrolla
 window.onscroll = function () { scrollFunction() };
 
-let header = document.getElementById("header");
+let navbar = document.getElementById("navbar");
 let logo = document.getElementById("logo");
 
 // Get the offset position of the header
-var sticky = header.offsetTop;
+var sticky = navbar.offsetTop;
 
 
 function scrollFunction() {
     // fixar navbar ou não
     if (window.pageYOffset >= sticky + 20) {
-        header.classList.add("fixed")
+        navbar.classList.add("fix")
         logo.style.height = "40px"
     } else {
-        header.classList.remove("fixed");
+        navbar.classList.remove("fix");
         logo.style.height = "55px"
     }
 

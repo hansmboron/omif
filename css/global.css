@@ -1,6 +1,7 @@
 body, html {
     font-family: 'Roboto', sans-serif;
     background-color: var(--body);
+    margin-top: 40px;
 }
 
 
@@ -22,7 +23,6 @@ a:hover {
     padding-top: 60px;
     margin-top: -60px;
 }
-
 
 .button-primary {
     background-color: var(--primary);
