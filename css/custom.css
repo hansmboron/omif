@@ -60,10 +60,14 @@ main a:hover {
 #mainCard .card-title, #sideCard .card-title {
     font-family: 'Nunito', sans-serif;
     color: var(--secondary);
-    font-weight: bold;
+    font-weight: 800;
 }
 
 #mainCard .card-text {
+    font-size: large;
+}
+
+#mainCard section div p {
     font-size: large;
 }
 

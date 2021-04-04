@@ -4,6 +4,10 @@ body, html {
     margin-top: 40px;
 }
 
+h1, h2, h3, h4 {
+    font-family: 'Nunito', sans-serif;
+}
+
 
 .text-justify {
     text-align: justify;
