@@ -1,4 +1,5 @@
-@import url(./bootstrap.min.css);
+/*ouvi dizer que usar cdn é mais rapido*/
+/*@import url(./bootstrap.min.css);*/
 @import url(./config.css);
 @import url(./global.css);
 @import url(./custom.css);
