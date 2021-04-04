@@ -9,15 +9,6 @@ body, html {
     text-align: justify;
 }
 
-a {
-    color: var(--secondary);
-    transition: all ease-out .2s;
-}
-
-a:hover {
-    color: var(--link-hover);
-}
-
 /*para não ficar por baixo da navbar na navegação dentro da pagina*/
 .anchor {
     padding-top: 60px;

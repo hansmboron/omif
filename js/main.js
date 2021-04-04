@@ -5,7 +5,17 @@ let navbar = document.getElementById("navbar");
 let logo = document.getElementById("logo");
 
 // Get the offset position of the header
-var sticky = navbar.offsetTop;
+let sticky = navbar.offsetTop;
+
+
+let toastElList = [].slice.call(document.querySelectorAll('.toast'))
+let toastList = toastElList.map(function(toastEl) {
+    // Creates an array of toasts (it only initializes them)
+    return new bootstrap.Toast(toastEl, {autohide: false})
+});
+toastList.forEach(toast => toast.show()); // This show them
+
+console.log(toastList); // Testing to see if it works
 
 
 function scrollFunction() {

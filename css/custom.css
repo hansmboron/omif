@@ -48,6 +48,15 @@ HEADER*/
 /*----------------------------
 MAIN*/
 
+main a {
+    color: var(--secondary);
+    transition: all ease-out .2s;
+}
+
+main a:hover {
+    color: var(--link-hover);
+}
+
 #mainCard .card-title, #sideCard .card-title {
     font-family: 'Nunito', sans-serif;
     color: var(--secondary);
@@ -83,9 +92,28 @@ MAIN*/
     background-color: var(--link-hover) ;
 }
 
+#toast1 {
+    position: fixed;
+    top: 90px;
+    right: 15px;
+    z-index: 1032;
+}
+
+#toast1 .btn-close {
+    border-radius: 20px;
+    padding: 5px;
+    background-color: white;
+}
+
+.toast-header {
+    background-color: var(--primary);
+}
+
 /*----------------------------
 FOOTER*/
 footer div div a {
+    text-decoration: none;
     padding: .5rem;
 }
+
 

@@ -3,25 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width,initial-scale=1" name="viewport">
-    <meta name="description" content="A Olimpíada de Matemática dos Institutos Federais (OMIF) é uma competição internacional de matemática. É  direcionada para alunos do ensino técnico integrado ao nível médio das instituições da rede federal de educação profissional e tecnológica brasileira e para discentes de escolas do exterior, do ensino técnico de nível médio compatível." />
-    <link rel="icon" href="img/favicon.svg">
+    <meta content="A Olimpíada de Matemática dos Institutos Federais (OMIF) é uma competição internacional de matemática. É  direcionada para alunos do ensino técnico integrado ao nível médio das instituições da rede federal de educação profissional e tecnológica brasileira e para discentes de escolas do exterior, do ensino técnico de nível médio compatível."
+          name="description"/>
+    <link href="img/favicon.svg" rel="icon">
     <link href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" rel="stylesheet">
 
     <link href="css/main.css" rel="stylesheet">
-    <title>OMIF</title>
+    <title>OMIF - Página Inicial</title>
 </head>
 <body>
 
 <!--HEADER-->
 <header id="header">
-        <nav id="navbar" class="navbar navbar-expand-xl navbar-dark fixed-top py-0">
-            <div class="container">
-            <a class="navbar-brand" href="#">
-                <img id="logo" alt="OMIF Logo" class="d-inline-block align-top" height="55" src="img/omif.svg">
+    <nav class="navbar navbar-expand-xl navbar-dark fixed-top py-0" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img alt="OMIF Logo" class="d-inline-block align-top" height="55" id="logo"
+                     src="img/omif.svg" title="Olimpíada de Matemática dos Institutos Federais">
                 <span class="visually-hidden">OMIF</span>
             </a>
 
@@ -33,7 +36,8 @@
             <div class="collapse navbar-collapse" id="toggleMobileMenu">
                 <ul class="navbar-nav ms-auto text-center fw-bold align-items-center">
                     <li>
-                        <a aria-current="page" class="nav-link btn-outline-success active" href="#" title="Início">
+                        <a aria-current="page" class="nav-link btn-outline-success active" href="index.html"
+                           title="Início">
                             <svg fill="currentColor" height="30" viewBox="0 0 20 20" width="30"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
@@ -42,7 +46,8 @@
                         </a>
                     </li>
                     <li>
-                        <a class="nav-link btn-outline-success" href="#" title="Evento 2ª Fase 2020">2ª Fase 2020</a>
+                        <a class="nav-link btn-outline-success" href="2fase.html" title="Evento 2ª Fase 2020">2ª Fase
+                            2020</a>
                     </li>
                     <li>
                         <a class="nav-link btn-outline-success" href="#" title="Comissões Organizadoras">Comissões
@@ -83,80 +88,92 @@
                     </li>
                 </ul>
             </div>
-            </div>
-        </nav>
+        </div>
+    </nav>
 </header>
 <!--HEADER-->
 <!--MAIN-->
 <main class="container my-3 ">
     <!--    Carousel-->
-    <div id="slider" class="card my-3 bg-dark">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="card my-3 bg-dark" id="slider">
+        <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleCaptions">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0"
+                        data-bs-target="#carouselExampleCaptions" type="button"></button>
+                <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleCaptions"
+                        type="button"></button>
+                <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleCaptions"
+                        type="button"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="img/omif.svg" class="d-block w-100" alt="...">
+                    <img alt="..." class="d-block w-100" src="img/omif.svg">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>First slide label</h5>
                         <p>Some representative placeholder content for the first slide.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="img/omif.svg" class="d-block w-100" alt="...">
+                    <img alt="..." class="d-block w-100" src="img/omif.svg">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Second slide label</h5>
                         <p>Some representative placeholder content for the second slide.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="img/omif.svg" class="d-block w-100" alt="...">
+                    <img alt="..." class="d-block w-100" src="img/omif.svg">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Third slide label</h5>
                         <p>Some representative placeholder content for the third slide.</p>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleCaptions"
+                    type="button">
+                <span aria-hidden="true" class="carousel-control-prev-icon"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleCaptions"
+                    type="button">
+                <span aria-hidden="true" class="carousel-control-next-icon"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
     </div>
 
     <div class="row g-3 ">
-        <div id="mainCard" class="d-md-inline-block d-block col-12 col-md-8">
+        <div class="d-md-inline-block d-block col-12 col-md-8" id="mainCard">
             <section class="card">
-                <div class="card-header text-muted pb-0">
-                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <div class="card-header text-dark pb-0">
+                    <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item small active" aria-current="page">Home</li>
-<!--                            <li class="breadcrumb-item small"><a href="#">Library</a></li>-->
+                            <li aria-current="page" class="breadcrumb-item small active">Home</li>
+                            <!--                            <li class="breadcrumb-item small"><a href="#">Library</a></li>-->
                         </ol>
                     </nav>
                 </div>
                 <div class="card-body mb-4">
                     <h1 class="card-title text-center mb-4">Resultado OMIF 2020:</h1>
                     <div class="text-center mb-4">
-                        <a href="https://omif.muz.ifsuldeminas.edu.br/attachments/article/4/1%C2%AA%20FASE%20OMIF%202020%20-%20Resultado%20Medalhista%20de%20OURO.pdf" target="_blank" rel="noopener"><h4>Medalhista de OURO</h4></a>
-                        <a href="https://omif.muz.ifsuldeminas.edu.br/attachments/article/4/1%C2%AA%20FASE%20OMIF%202020%20-%20Resultado%20Medalhista%20de%20PRATA.pdf" target="_blank" rel="noopener"><h4>Medalhista de PRATA</h4></a>
-                        <a href="https://omif.muz.ifsuldeminas.edu.br/attachments/article/4/1%C2%AA%20FASE%20OMIF%202020%20-%20Resultado%20Medalhista%20de%20BRONZE.pdf" target="_blank" rel="noopener"><h4>Medalhista de BRONZE</h4></a>
-                        <a href="https://omif.muz.ifsuldeminas.edu.br/attachments/article/4/1%C2%AA%20FASE%20OMIF%202020%20-%20Resultado%20Men%C3%A7%C3%A3o%20Honrosa.pdf" target="_blank" rel="noopener"><h4>Menção Honrosa</h4></a>
-                        <a href="https://omif.muz.ifsuldeminas.edu.br/attachments/article/4/1%C2%AA%20FASE%20OMIF%202020%20-%20Resultado%20Medalhista%20por%20Campus.pdf" target="_blank" rel="noopener"><h4>Medalhistas por Campus</h4></a>
+                        <a href="https://omif.muz.ifsuldeminas.edu.br/attachments/article/4/1%C2%AA%20FASE%20OMIF%202020%20-%20Resultado%20Medalhista%20de%20OURO.pdf"
+                           rel="noopener" target="_blank"><h4>Medalhista de OURO</h4></a>
+                        <a href="https://omif.muz.ifsuldeminas.edu.br/attachments/article/4/1%C2%AA%20FASE%20OMIF%202020%20-%20Resultado%20Medalhista%20de%20PRATA.pdf"
+                           rel="noopener" target="_blank"><h4>Medalhista de PRATA</h4></a>
+                        <a href="https://omif.muz.ifsuldeminas.edu.br/attachments/article/4/1%C2%AA%20FASE%20OMIF%202020%20-%20Resultado%20Medalhista%20de%20BRONZE.pdf"
+                           rel="noopener" target="_blank"><h4>Medalhista de BRONZE</h4></a>
+                        <a href="https://omif.muz.ifsuldeminas.edu.br/attachments/article/4/1%C2%AA%20FASE%20OMIF%202020%20-%20Resultado%20Men%C3%A7%C3%A3o%20Honrosa.pdf"
+                           rel="noopener" target="_blank"><h4>Menção Honrosa</h4></a>
+                        <a href="https://omif.muz.ifsuldeminas.edu.br/attachments/article/4/1%C2%AA%20FASE%20OMIF%202020%20-%20Resultado%20Medalhista%20por%20Campus.pdf"
+                           rel="noopener" target="_blank"><h4>Medalhistas por Campus</h4></a>
                     </div>
-                    <figure class="figure">
-                        <img class="figure-img img-fluid lazyload" data-src="img/banners/omif_2020_banner.jpg" alt="OMIF 2021 Banner">
+                    <figure class="figure shadow-lg">
+                        <img alt="OMIF 2021 Banner" class="figure-img img-fluid lazyload"
+                             data-src="img/banners/omif_2020_banner.jpg">
                     </figure>
                     <div class="text-center mb-5">
                         <h5>Para ver a programação completa acesse:</h5>
-                        <a href="#" class="btn btn-danger button-secondary rounded-pill shadow">Evento 2ª Fase 2020</a>
+                        <a class="btn btn-danger button-secondary rounded-pill shadow" href="2fase.html">Evento 2ª Fase
+                            2020</a>
                     </div>
                     <div class="card-text">
                         <h4>Anúncio:</h4>
@@ -178,70 +195,109 @@
             </section>
         </div>
 
-        <div id="sideCard" class="col-12 col-md-4">
+        <div class="col-12 col-md-4" id="sideCard">
             <section class="card">
                 <div class="card-body">
-                    <h4 id="sideTitle" class="card-title text-center anchor">Edição 2020</h4>
+                    <h4 class="card-title text-center anchor" id="sideTitle">Edição 2020</h4>
                     <div class="card-text text-justify">
                         <span class="fw-bold mb-3">Links:</span>
                         <p class="card-text">
                             Datas importantes da III OMIF:<br>
-                            <a href="https://omif.muz.ifsuldeminas.edu.br/pt/calendario" target="_blank" rel="noopener">Calendário</a>
+                            <a href="https://omif.muz.ifsuldeminas.edu.br/pt/calendario" rel="noopener" target="_blank">Calendário</a>
                         </p>
                         <p class="card-text">
                             Confira o regulamento da III OMIF:<br>
-                            <a href="https://omif.muz.ifsuldeminas.edu.br/attachments/article/4/Regulamento%20-%20OMIF%20-%202020%20-%20Adaptada%20Pandemia.pdf" target="_blank" rel="noopener">Regulamento</a>
+                            <a href="https://omif.muz.ifsuldeminas.edu.br/attachments/article/4/Regulamento%20-%20OMIF%20-%202020%20-%20Adaptada%20Pandemia.pdf"
+                               rel="noopener" target="_blank">Regulamento</a>
                         </p>
                         <p class="card-text">
                             Confira os editais importantes da OMIF:<br>
-                            <a href="https://omif.muz.ifsuldeminas.edu.br/pt/editais" target="_blank" rel="noopener">Regulamento</a>
+                            <a href="https://omif.muz.ifsuldeminas.edu.br/pt/editais" rel="noopener" target="_blank">Regulamento</a>
                         </p>
                         <p class="card-text">
                             Contato:<br>
-                            <a href="mailto:omif@ifsuldeminas.edu.br" target="_blank" rel="noopener">omif@ifsuldeminas.edu.br</a>
+                            <a href="mailto:omif@ifsuldeminas.edu.br" rel="noopener" target="_blank">omif@ifsuldeminas.edu.br</a>
                         </p>
                         <p class="card-text fw-bold mt-5">
                             Para maiores esclarecimentos sobre a OMIF 2020, assista os vídeos:
                         </p>
                         <picture class="figure">
-                            <iframe class="figure-img img-fluid" width="560" height="315" src="https://www.youtube.com/embed/AyAI2M5Mar8" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+                            <iframe allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen class="figure-img img-fluid"
+                                    height="315" src="https://www.youtube.com/embed/AyAI2M5Mar8"
+                                    title="YouTube video player"
+                                    width="560"></iframe>
                         </picture>
                         <picture class="figure">
-                            <iframe class="figure-img img-fluid" width="560" height="315" src="https://www.youtube.com/embed/iTS7RTIqVkk" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+                            <iframe allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen class="figure-img img-fluid"
+                                    height="315" src="https://www.youtube.com/embed/iTS7RTIqVkk"
+                                    title="YouTube video player"
+                                    width="560"></iframe>
                         </picture>
                     </div>
                 </div>
             </section>
         </div>
     </div>
-
-
 </main>
+
+<div id="toast1" class="toast" role="alert" aria-live="assertive"  aria-atomic="true">
+    <div class="toast-header">
+        <img src="img/favicon.svg" width="24" height="24" class="rounded bg-light me-2" alt="...">
+        <strong class="me-auto text-light">Mensagem</strong>
+<!--        <small class="text-muted">11 mins ago</small>-->
+        <button style="color: white;" type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+        <span style="font-size: larger; font-weight: bold; color: darkgreen;">ATENÇÃO! Alguma mensagem importante.</span>
+    </div>
+</div>
+
 <footer class="card-footer bg-white px-3">
     <div class="row text-center align-items-center">
         <div class="d-xl-inline-block d-block col-12 col-xl-3 py-3 text-xl-start">
-            <a href="#"><img class="lazyload" height="50" data-src="img/logo_if.png" alt="Logo Instituto Federal"></a>
+            <a href="#"><img alt="Logo Instituto Federal" class="lazyload" data-src="img/logo_if.png" height="50"></a>
         </div>
         <div class="col-12 col-xl-9 text-xl-end">
-            <a href="https://www.obm.org.br" target="_blank" rel="noopener"><img class="lazyload" height="80" data-src="img/obm.png" alt="Logo Olimpíada Brasileira de Matemática"></a>
-            <a href="https://www.gov.br/cnpq/pt-br" target="_blank" rel="noopener"><img class="lazyload" height="65" data-src="img/cnpq.png" alt="Logo Conselho Nacional de Desenvolvimento Científico e Tecnológico"></a>
-            <a href="https://www.bieniodamatematica.org.br" target="_blank" rel="noopener"><img class="lazyload" height="85" data-src="img/bienio.png" alt="Logo Biênio da Matemática Brasil"></a>
-            <a href="https://impa.br" target="_blank" rel="noopener"><img class="lazyload" height="85" data-src="img/impa.png" alt="Logo Instituto de Matemática Pura e Aplicada"></a>
-            <a href="#"><img class="lazyload" height="85" data-src="img/10anos.webp" alt="Logo 10 anos Institutos Federais"></a>
-            <a href="https://www.gov.br/mcti/pt-br" target="_blank" rel="noopener"><img class="lazyload" height="44" data-src="img/governo.webp" alt="Logo Ministério da Ciência, Tecnologia e Inovações"></a>
+            <a href="https://www.obm.org.br" rel="noopener" target="_blank">
+                <img alt="Logo Olimpíada Brasileira de Matemática" class="lazyload" data-src="img/obm.png" height="80">
+            </a>
+            <a href="https://www.gov.br/cnpq/pt-br" rel="noopener" target="_blank">
+                <img alt="Logo Conselho Nacional de Desenvolvimento Científico e Tecnológico" class="lazyload"
+                     data-src="img/cnpq.png" height="65">
+            </a>
+            <a href="https://www.bieniodamatematica.org.br" rel="noopener" target="_blank">
+                <img alt="Logo Biênio da Matemática Brasil" class="lazyload" data-src="img/bienio.png" height="85">
+            </a>
+            <a href="https://impa.br" rel="noopener" target="_blank">
+                <img alt="Logo Instituto de Matemática Pura e Aplicada" class="lazyload" data-src="img/impa.png"
+                     height="85">
+            </a>
+            <a href="#">
+                <img alt="Logo 10 anos Institutos Federais" class="lazyload" data-src="img/10anos.webp" height="85">
+            </a>
+            <a href="https://www.gov.br/mcti/pt-br" rel="noopener" target="_blank">
+                <img alt="Logo Ministério da Ciência, Tecnologia e Inovações" class="lazyload"
+                     data-src="img/governo.webp" height="44">
+            </a>
         </div>
     </div>
 </footer>
 
 <!--btn go to top-->
-<div class="text-right "> <button onclick="toTop()" id="btn_top" title="Ir ao topo">
-    <svg height="30" width="30" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg>
-</button></div>
+<div class="text-right ">
+    <button id="btn_top" onclick="toTop()" title="Ir ao topo">
+        <svg fill="currentColor" height="30" viewBox="0 0 20 20" width="30" xmlns="http://www.w3.org/2000/svg">
+            <path clip-rule="evenodd"
+                  d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                  fill-rule="evenodd"></path>
+        </svg>
+    </button>
+</div>
 
 
 <!-- Bootstrap Bundle with Popper -->
-<script src="js/bootstrap.bundle.min.js" async></script>
-<script src="js/lazysizes.min.js" async></script>
+<script async src="js/bootstrap.bundle.min.js"></script>
+<script async src="js/lazysizes.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
