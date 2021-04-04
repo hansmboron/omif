@@ -3,4 +3,8 @@
         padding-left: 1em;
         padding-right: 1em;
     }
+
+    footer div div {
+        margin-bottom: 1em;
+    }
 }
