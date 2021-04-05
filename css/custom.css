@@ -20,7 +20,7 @@ HEADER*/
     box-shadow: 0 0 20px var(--primary);
 }
 
-#header .nav-link.active {
+#header .nav-link.active, #header .dropdown-item.active {
     background-color: transparent;
     color: white;
 }
