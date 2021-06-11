@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta
+        content="A Olimpíada de Matemática dos Institutos Federais (OMIF) é uma competição internacional de matemática. É  direcionada para alunos do ensino técnico integrado ao nível médio das instituições da rede federal de educação profissional e tecnológica brasileira e para discentes de escolas do exterior, do ensino técnico de nível médio compatível."
+        name="description" />
+    <link href="assets/img/favicon.svg" rel="icon">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&display=swap" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" rel="stylesheet">
+
+    <link href="css/main.css" rel="stylesheet">
+    <title>OMIF - Revista</title>
+</head>
+
+<body>
+
+    <!--HEADER-->
+    <header id="header">
+        <nav class="navbar navbar-expand-xl navbar-dark fixed-top py-0" id="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img alt="OMIF Logo" class="d-inline-block align-top" height="55" id="logo"
+                        src="assets/img/omif.svg" title="Olimpíada de Matemática dos Institutos Federais">
+                    <span class="visually-hidden">OMIF</span>
+                </a>
+
+                <button aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler" data-bs-target="#toggleMobileMenu" data-bs-toggle="collapse" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                    <ul class="navbar-nav ms-auto text-center fw-bold align-items-center">
+                        <li>
+                            <a class="nav-link btn-outline-success" href="index.html" title="Início">
+                                <svg fill="currentColor" height="30" viewBox="0 0 20 20" width="30"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z">
+                                    </path>
+                                </svg>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link btn-outline-success" href="comissoes_organizadoras.html"
+                                title="Comissões Organizadoras">Comissões
+                                Organizadoras</a>
+                        </li>
+                        <li>
+                            <a class="nav-link btn-outline-success" href="historia.html" title="História">História</a>
+                        </li>
+                        <li>
+                            <a class="nav-link btn-outline-success" href="editais.html" title="Editais">Editais</a>
+                        </li>
+                        <li>
+                            <a class="nav-link btn-outline-success" href="materiais_estudo.html"
+                                title="Materiais de Estudo">
+                                Materiais Estudo
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a aria-expanded="false" class="nav-link btn-outline-success dropdown-toggle"
+                                data-bs-toggle="dropdown" href="#" id="navbarDropdown" role="button"
+                                title="Área de Imprensa">
+                                Área Imprensa
+                            </a>
+                            <ul aria-labelledby="navbarDropdown" class="dropdown-menu dropdown-menu-dark pt-2">
+                                <li><a class="dropdown-item fw-bold" href="omif_2018_2.html">OMIF 2018</a></li>
+                                <li><a class="dropdown-item fw-bold" href="omif_2019_2.html">OMIF 2019</a></li>
+                                <li><a class="dropdown-item fw-bold" href="omif_2020.html">OMIF 2020</a></li>
+                                <li><a class="dropdown-item fw-bold" href="artes_visuais.html">Resualtado Artes
+                                        Visuais</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a aria-current="page" class="nav-link btn-outline-success active" href="revista.html"
+                                title="Revista OMIF 2021">
+                                Revista
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link btn-outline-danger"
+                                href="https://omif.muz.ifsuldeminas.edu.br/areaRestrita" title="Acessar Área Restrita">
+                                <svg fill="currentColor" height="16" viewBox="0 0 20 20" width="16"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path clip-rule="evenodd"
+                                        d="M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a1 1 0 100 2 2 2 0 012 2 1 1 0 102 0 4 4 0 00-4-4z"
+                                        fill-rule="evenodd"></path>
+                                </svg>
+                                Área Restrita
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--HEADER-->
+    <!--MAIN-->
+    <main class="container my-3 ">
+        <div class="col-12" id="mainCard">
+            <section class="card">
+                <div class="card-header pb-0">
+                    <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item small"><a href="index.html">Home</a></li>
+                            <li aria-current="page" class="breadcrumb-item small active">Revista</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="card-body mb-3 mx-xl-5">
+
+                    <!--        revista-->
+                    <nav class="navbar rounded-top navbar-dark px-3" id="navRev">
+                        <a class="navbar-brand" href="assets/img/revista.svg" target="_blank"><img
+                                alt="Logo Revista Omif" height="40" src="assets/img/revista_white.svg" width="150"></a>
+
+                        <ul class="nav">
+                            <li class="nav-item btn-outline-success">
+                                <a class="nav-link" href="#apre">Apresentação</a>
+                            </li>
+                            <li class="nav-item btn-outline-success">
+                                <a class="nav-link" href="#exp">Expediente</a>
+                            </li>
+                            <li class="nav-item btn-outline-success">
+                                <a class="nav-link" href="#norm">Normas para Publicação</a>
+                            </li>
+                            <li class="nav-item btn-outline-success">
+                                <a class="nav-link" href="#atual">Edição Atual</a>
+                            </li>
+                            <li class="nav-item btn-outline-success">
+                                <a class="nav-link" href="#ante">Edições Anteriores</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="bg-light pb-4" data-bs-offset="0" data-bs-spy="scroll" data-bs-target="#navRev"
+                        id="revista" tabindex="0">
+                        <section class="px-2 px-sm-3 px-md-4 px-lg-5 text-justify">
+                            <h3 class="pt-5" id="apre">Apresentação</h3>
+                            <p style="font-size: large; ">A <strong>Revista OMIF</strong> é uma ação da Comissão
+                                Organizadora da Olimpíada de Matemática das Instituições Federais (OMIF), que pretende
+                                estimular e divulgar as ações de Ensino, Pesquisa e Extensão vinculadas à OMIF. A
+                                publicação é anual e/ou semestral com artigos ligados às atividades desenvolvidas na
+                                Rede Federal de Educação Profissional, Científica e Tecnológica Brasileira (Rede
+                                Federal).</p>
+
+                            <h3 class="pt-5" id="exp">Expediente</h3>
+                            <h4>Equipe Editorial</h4>
+                            <h5>Editor Executivo</h5>
+                            <ul>
+                                <li>
+                                    Laynara dos Reis Santos Zontini – IFPR - campus Irati
+                                </li>
+                            </ul>
+                            <h5>Editor Assistente</h5>
+                            <ul>
+                                <li>
+                                    Renato Machado Pereira - IFSULDEMINAS – campus Muzambinho
+                                </li>
+                            </ul>
+                            <h5>Editor Científico</h5>
+                            <ul>
+                                <li>
+                                    Renivaldo Sodré de Sena - IFCE - campus Tabuleiro do Norte
+                                </li>
+                            </ul>
+                            <h5>Diagramação</h5>
+                            <ul>
+                                <li>
+                                    Tatiana de Carvalho Duarte - IFSULDEMINAS - campus Muzambinho
+                                </li>
+                                <li>
+                                    Diego Dutra Zontini – IFPR campus Irati
+                                </li>
+                            </ul>
+                            <h5>Comitê Editorial</h5>
+                            <ul>
+                                <li>
+                                    Felipe Mascagna Bittencourt Lima - IFSP – campus São João da Boa Vista
+                                </li>
+                                <li>
+                                    Laynara dos Reis Santos Zontini – IFPR - campus Irati
+                                </li>
+                                <li>
+                                    Marineide Almeida Rocha - IFNMG - campus Avançado Janaúba
+                                </li>
+                                <li>
+                                    Maurino Atanásio - IFMT - campus Cuiabá Bela Vista
+                                </li>
+                                <li>
+                                    Renato Machado Pereira - IFSULDEMINAS – campus Muzambinho
+                                </li>
+                                <li>
+                                    Renivaldo Sodré de Sena - IFCE - campus Tabuleiro do Norte
+                                </li>
+                                <li>
+                                    Tatiane Tagino Comin - IFBaiano - campus Serrinha
+                                </li>
+                            </ul>
+                            <br>
+                            <p>Pareceristas (a definir)</p>
+
+                            <h3 class="pt-5" id="norm">Normas para Publicação</h3>
+                            <span class="pt-3">Clique <a href="pdf/EDITAL DE CHAMADA Revista OMIF 2021.pdf"
+                                    rel="noopener" target="_blank">aqui</a> para acessar o Edital da Chamada para a
+                                Revista OMIF 2021.</span><br>
+                            <a class="btn btn-success rounded-pill shadow mb-3 px-3"
+                                href="pdf/EDITAL DE CHAMADA Revista OMIF 2021.pdf" rel="noopener" target="_blank">Edital
+                                de Chamada Revista OMIF (.pdf)
+                                <svg fill="currentColor" height="24" viewBox="0 0 20 20" width="24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path clip-rule="evenodd"
+                                        d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z"
+                                        fill-rule="evenodd"></path>
+                                </svg>
+                            </a>
+
+                            <p>O artigo deverá conter no mínimo 2.000 (dois mil) e no máximo 8.000 (oito mil) caracteres
+                                sem
+                                contar os espaços (título, nome do/s autor/es, palavras-chave e referências não são
+                                computados).
+                            </p>
+                            <p>O texto deverá ser escrito em Língua Portuguesa, obedecendo às regras ortográficas e
+                                gramaticais vigentes, em fonte Arial 12, com espaçamento 1,5 entre linhas, seguindo
+                                template
+                                disponibilizado abaixo.</p>
+                            <a class="btn btn-success rounded-pill shadow mb-2 px-3"
+                                download="pdf/Template_Relato_de_Exp_e_Ref_Teorica.docx"
+                                href="pdf/Template_Relato_de_Exp_e_Ref_Teorica.docx" rel="noopener noreferrer"
+                                target="_blank">Template Relato de Experiência e Reflexão Teórica (.docx)
+                                <svg fill="currentColor" height="24" viewBox="0 0 20 20" width="24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path clip-rule="evenodd"
+                                        d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z"
+                                        fill-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                            <br>
+                            <a class="btn btn-success rounded-pill shadow mb-2 px-3"
+                                download="pdf/Template Resolução de questões.docx"
+                                href="pdf/Template Resolução de questões.docx" rel="noopener noreferrer"
+                                target="_blank">Template Resolução de questões (.docx)
+                                <svg fill="currentColor" height="24" viewBox="0 0 20 20" width="24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path clip-rule="evenodd"
+                                        d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z"
+                                        fill-rule="evenodd"></path>
+                                </svg>
+                            </a>
+                            <br>
+                            <a class="btn btn-success rounded-pill shadow mb-3 px-3" download="pdf/Template OMIF.tex"
+                                href="pdf/Template OMIF.tex" rel="noopener noreferrer" target="_blank">Template (.tex)
+                                <svg fill="currentColor" height="24" viewBox="0 0 20 20" width="24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path clip-rule="evenodd"
+                                        d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z"
+                                        fill-rule="evenodd"></path>
+                                </svg>
+                            </a>
+
+                            <p>Serão publicados na Revista OMIF artigos com os seguintes formatos e conteúdos:</p>
+                            <ul>
+                                <li class="fw-bold pt-2">Formato Relato de Experiência:</li>
+                            </ul>
+                            <ol type="a">
+                                <li>Experiências relacionadas à participação ou preparação dos estudantes para a OMIF.
+                                </li>
+                                <li>Projetos/ações de Ensino, Pesquisa ou Extensão desenvolvidos na Rede Federal que
+                                    estejam
+                                    vinculados à OMIF.
+                                </li>
+                                <li>Projeto/ações de incentivo à participação feminina na OMIF.
+                                </li>
+                                <li>Projeto/ações de incentivo à participação do público da Educação Especial e/ou com
+                                    necessidades específicas na OMIF.
+                                </li>
+                                <li>Eventos organizados pelos Campi da Rede Federal, em decorrência da participação na
+                                    OMIF.
+                                </li>
+                            </ol>
+                            <ul>
+                                <li class="fw-bold pt-2">Formato Resolução de Questão:</li>
+                            </ul>
+                            <ol type="a">
+                                <li>Resolução dialogada de questões da OMIF (qualquer edição) que evidencie o potencial
+                                    matemático e educacional da prova.
+                                </li>
+                            </ol>
+                            <ul>
+                                <li class="fw-bold pt-2">Formato Reflexão Teórica:</li>
+                            </ul>
+                            <ol type="a">
+                                <li>Reflexão teórica sobre as contribuições da OMIF para a Matemática.</li>
+                                <li>Reflexão teórica sobre as contribuições da OMIF para a Educação Matemática.</li>
+                                <li>Reflexão teórica sobre as contribuições da OMIF para o Ensino de Matemática.</li>
+                            </ol>
+
+                            <ul>
+                                <li class="fw-bold">Templates para publicação</li>
+                            </ul>
+                            <ol type="a">
+                                <li>Formato Relato de Experiência e Reflexão Teórica (.doc)</li>
+                                <li>Formato Resolução de Questão (.doc e .tex)</li>
+                            </ol>
+                            <p class="fw-bold pt-3">Submissão</p>
+                            <p>
+                                Para submeter um artigo para a Revista OMIF acesse <a
+                                    href="https://forms.gle/Z89BgFRXP5NLZ5A4A" rel="noopener" target="_blank">o
+                                    formulário</a>.<br>O prazo para submissão encerra às 23h59 do <strong>dia 18 de
+                                    julho de
+                                    2021</strong>.<br>Link do formulário:
+                                <a class="btn btn-success rounded-pill shadow mb-3 px-3"
+                                    href="https://forms.gle/Z89BgFRXP5NLZ5A4A" rel="noopener" target="_blank">Link do
+                                    formulário
+                                    <svg fill="currentColor" height="24" viewBox="0 0 20 20" width="24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z">
+                                        </path>
+                                        <path
+                                            d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </p>
+
+
+                            <h3 class="pt-5" id="atual">Edição Atual</h3>
+                            <p class="text-danger">Em desenvolvimento!</p>
+
+                            <h3 class="pt-5" id="ante">Edições Anteriores</h3>
+                            <p class="text-danger">Em desenvolvimento!</p>
+                        </section>
+                    </div>
+
+
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="card-footer bg-white px-3">
+        <div class="row text-center align-items-center">
+            <div class="d-xl-inline-block d-block col-12 col-xl-3 py-3 text-xl-start">
+                <a href="#"><img alt="Logo Instituto Federal" class="lazyload" data-src="assets/img/logo_if.png"
+                        height="50"></a>
+            </div>
+            <div class="col-12 col-xl-9 text-xl-end">
+                <a href="https://www.obm.org.br" rel="noopener" target="_blank">
+                    <img alt="Logo Olimpíada Brasileira de Matemática" class="lazyload" data-src="assets/img/obm.png"
+                        height="80">
+                </a>
+                <a href="https://www.gov.br/cnpq/pt-br" rel="noopener" target="_blank">
+                    <img alt="Logo Conselho Nacional de Desenvolvimento Científico e Tecnológico" class="lazyload"
+                        data-src="assets/img/cnpq.png" height="65">
+                </a>
+                <a href="https://www.bieniodamatematica.org.br" rel="noopener" target="_blank">
+                    <img alt="Logo Biênio da Matemática Brasil" class="lazyload" data-src="assets/img/bienio.png"
+                        height="85">
+                </a>
+                <a href="https://impa.br" rel="noopener" target="_blank">
+                    <img alt="Logo Instituto de Matemática Pura e Aplicada" class="lazyload"
+                        data-src="assets/img/impa.png" height="85">
+                </a>
+                <a href="#">
+                    <img alt="Logo 10 anos Institutos Federais" class="lazyload" data-src="assets/img/10anos.webp"
+                        height="85">
+                </a>
+                <a href="https://www.gov.br/mcti/pt-br" rel="noopener" target="_blank">
+                    <img alt="Logo Ministério da Ciência, Tecnologia e Inovações" class="lazyload"
+                        data-src="assets/img/governo.webp" height="44">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!--btn go to top-->
+    <div class="text-right ">
+        <button id="btn_top" onclick="toTop()" title="Ir ao topo">
+            <svg fill="currentColor" height="30" viewBox="0 0 20 20" width="30" xmlns="http://www.w3.org/2000/svg">
+                <path clip-rule="evenodd"
+                    d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                    fill-rule="evenodd"></path>
+            </svg>
+        </button>
+    </div>
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script async src="js/bootstrap.bundle.min.js"></script>
+    <script async src="js/lazysizes.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        var offset = 80;
+
+        $('.navbar li a').click(function (event) {
+            event.preventDefault();
+            $($(this).attr('href'))[0].scrollIntoView();
+            scrollBy(0, -offset);
+        });
+    </script>
+</body>
+
+</html>

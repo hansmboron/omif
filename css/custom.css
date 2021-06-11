@@ -120,4 +120,45 @@ footer div div a {
     padding: .5rem;
 }
 
+#navRev {
+    background: linear-gradient(90deg, #0c4128, forestgreen);
+}
+
+#navRev a {
+    color: #c1d6cc;
+}
+
+#navRev a:hover {
+    color: white;
+    font-weight: bold;
+}
+
+#revista ul li {
+    list-style: square;
+}
+
+#revista ol {
+    list-style-type: lower-alpha;
+}
+
+#revista h5 {
+    margin-top: 15px;
+    color: #343a40;
+}
+
+#revista h3[id] {
+    /*padding-top: 60px;*/
+    /*margin-top: -40px;*/
+    font-family: 'Nunito', sans-serif;
+    color: var(--primary);
+    font-weight: 800;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 40px;
+}
+
+#revista h3[id]:first-child {
+    margin-top: 0;
+}
+
 
