@@ -172,7 +172,7 @@
                         </nav>
                     </div>
                     <div class="card-body text-justify mb-4">
-                        <h1 class="card-title text-center mb-3">OMIF 2021:</h1>
+                        <h1 class="card-title text-center mb-3">OMIF 2021</h1>
                         <audio class="w-100" controls>
                             <source src="audios/omif2021.mp3" type="audio/mpeg">
                             <source src="audios/omif2021.ogg" type="audio/ogg; codec=opus">
@@ -223,7 +223,7 @@
                             <span class="fw-bold mb-3">Links:</span>
                             <p class="card-text">
                                 Datas importantes da IV OMIF:<br>
-                                <a href="https://omif.muz.ifsuldeminas.edu.br/pt/calendario" rel="noopener"
+                                <a data-bs-toggle="modal" data-bs-target="#calendarModal" href="#" rel="noopener"
                                     target="_blank">Calendário</a>
                             </p>
                             <p class="card-text">
@@ -278,6 +278,10 @@
         </div>
     </main>
 
+    <div style="font-size: 10px;" class="text-end">
+        <a href="https://www.freepik.com/vectors/background">Background vector created by freepik -
+            www.freepik.com</a>
+    </div>
     <footer class="card-footer bg-white px-3">
         <div class="row text-center align-items-center">
             <div class="d-xl-inline-block d-block col-12 col-xl-3 py-3 text-xl-start">
@@ -313,6 +317,29 @@
         </div>
     </footer>
 
+    <!-- Modal -->
+    <div class="modal fade" id="calendarModal" tabindex="-1" aria-labelledby="calendarModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="calendarModalLabel">Calendário OMIF 2021</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <figure class="figure cartaz" style="max-width:780px">
+                        <a class="text-center" href="assets/img/calendario_OMIF_2021.png" target="_blank"><img
+                                class="figure-img img-fluid shadow-sm border rounded"
+                                src="assets/img/calendario_OMIF_2021.png" alt="Calendário OMIF 2021" /></a>
+                    </figure>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!--btn go to top-->
     <div class="text-right ">
         <button id="btn_top" onclick="toTop()" title="Ir ao topo">
@@ -345,6 +372,16 @@
     <script async src="js/bootstrap.bundle.min.js"></script>
     <script async src="js/lazysizes.min.js"></script>
     <script src="js/main.js"></script>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 </body>
 
 </html>
