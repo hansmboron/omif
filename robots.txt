@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: http://omif.com.br/sitemap.xml
